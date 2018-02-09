@@ -5,8 +5,10 @@ import routes from './app.routes';
 import home from './home';
 import about from './about';
 import loginComponent from './login';
+import register from './register';
 
-angular.module('newsfeed', [uirouter, home, about,loginComponent])
+
+angular.module('newsfeed', [uirouter, home, about,loginComponent,register])
     .config(routes);
 
 if (process.env.NODE_ENV !== 'production') {
