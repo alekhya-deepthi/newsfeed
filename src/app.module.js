@@ -8,7 +8,7 @@ import loginComponent from './login';
 import register from './register';
 
 
-angular.module('newsfeed', [uirouter, home, about,loginComponent,register])
+angular.module('newsfeed', [uirouter, home, about, loginComponent, register])
     .config(routes);
 
 if (process.env.NODE_ENV !== 'production') {

@@ -1,8 +1,11 @@
 
 export default class RegisterController {
     constructor() {
+        this.username="";
+
       this.email="";
         this.password="";
+        this.confirmpassword="";
     }
     doRegister(){
         console.log(this.username);
