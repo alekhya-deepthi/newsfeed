@@ -11,9 +11,10 @@ export default class LoginController {
             "email":this.email,
             "password":this.password
         };
-        this.$http.post("http://localhost:3000/api/user/login",body)
+        this.$http.post("/api/user/login",body)
         .then((success)=>{
             // server responded with sucesss
+            this.error="";
             alert("success");
         },(error)=>{
             //serevr responded with error

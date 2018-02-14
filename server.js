@@ -45,7 +45,7 @@ app.post("/api/user/login",(request,response)=>{
         console.log('The solution is: ', results[0]);
         connection.end();
       });  
-})
+});
 if(process.env.NODE_ENV==="production"){
     app.use(express.static(path.join(__dirname,'dist')));
 

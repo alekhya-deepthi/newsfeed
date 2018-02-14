@@ -5,7 +5,8 @@
   "main": "src/index.html",
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js",
-    "build": "webpack --bail --progress --profile --config webpack.prod.js"
+    "build": "webpack --bail --progress --profile --config webpack.prod.js",
+    "serve": "NODE_ENV=production node server.js"
   },
   "keywords": [
     "AngularJS",
